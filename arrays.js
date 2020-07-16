@@ -100,7 +100,7 @@ let radiologia =[
         {
           hora: "8:30",
           especialista: "Andrea Zuñiga",
-          paciente: "Marcela Retamal",
+          paciente: "MARCELA RETAMAL",
           rut: "11123425-6",
           prevision: "ISAPRE"
         },
@@ -135,7 +135,7 @@ let radiologia =[
         {
           hora: "14:00",
           especialista: "Raquel Villaseca",
-          paciente: "Ana Sepulveda",
+          paciente: "ANA SEPULVEDA",
           rut: "17665461-4",
           prevision: "ISAPRE"
         }
@@ -144,18 +144,37 @@ let radiologia =[
       // cantidad de consultas por listado
       // radiologia 
       let radiologiaLongitud = radiologia.length
+      let radiologiaPrevi = radiologia.prevision
       document.write(
         `La cantidad de consultas para radiología es: ${radioLongitud}</br>`
       );
 
       // traumatologia 
       let traumatologiaLongitud = traumatologia.length
+      let traumatologiaPrevi = traumatologia.prevision
       document.write(
         `La cantidad de consultas para el dia de hoy de traumalogia es: ${traumatologiaLongitud} <br>`
       );
       //dental
       let dentaLongitud = dental.length
-      document.write(`La cantidad de Dental para el día de hoy es: ${dentaLongitud} <br>`);
+      document.write(`La cantidad de Dental para el día de hoy es: ${dentaLongitud} <br><br>`);
 
       // impresion por pantalla 
-        let mostrarPrimero = `El Primer paciente `
+      document.write('<strong>Radiologia:</strong> <br><br>')
+      
+      // RAdiologia 
+
+      document.write(`El Primer paciente de radiologia es ${radiologia[0].paciente} y su prevision es ${radiologia[0].prevision} | el ultimo paciente de radiologia es  ${radiologia[radiologiaLongitud - 1].paciente} y su prevision es ${radiologia[radiologiaLongitud - 1].prevision} <br><br>`)
+      
+        
+        // Traumatologia 
+      document.write('<strong>Traumatologia</strong> <br><br>')
+      
+        document.write(`El Primer paciente de radiologia es ${traumatologia[0].paciente} y su prevision es ${traumatologia[0].prevision} | el ultimo paciente de radiologia es  ${traumatologia[traumatologiaLongitud - 1].paciente} y su prevision es ${traumatologia[traumatologiaLongitud - 1].prevision} <br><br>`)
+
+        // Dental 
+
+        document.write('<strong>Dental</strong> <br><br>')
+        document.write(`El Primer paciente de radiologia es ${dental[0].paciente} y su prevision es ${dental[0].prevision} | el ultimo paciente de radiologia es  ${dental[dentaLongitud - 1].paciente} y su prevision es ${dental[dentaLongitud - 1].prevision} <br><br>`)
+
+
